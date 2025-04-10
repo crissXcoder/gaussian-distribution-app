@@ -1,0 +1,41 @@
+/* Estilos adicionales específicos para App */
+.app {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header p {
+  color: #666;
+  margin-top: 0;
+}
+
+/* Ajustes para las medidas estadísticas */
+.measures {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.measure {
+  background-color: #fff;
+  padding: 8px 15px;
+  border-radius: 20px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Personalización del gráfico */
+.graph-container svg {
+  overflow: visible;
+}
+
+.graph-container text {
+  font-size: 12px;
+}
+
+.x-axis line, .y-axis line {
+  stroke: #ddd;
+}
+
+.x-axis path, .y-axis path {
+  stroke: #aaa;
+}
