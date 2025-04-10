@@ -2,6 +2,7 @@ import React from 'react';
 import GaussianDistribution from './components/GaussianDistribution';
 import DistributionControls from './components/DistributionControls';
 import StatisticalMeasures from './components/StatisticalMeasures';
+import Footer from './components/Footer';
 import { useGaussianData } from './hooks/useGaussianData';
 import './App.css';
 
@@ -18,10 +19,6 @@ function App() {
 
   return (
     <div className="app">
-      <header>
-        <h1>Campana de Gauss Interactiva</h1>
-        <p>Visualización de distribuciones normales y medidas estadísticas</p>
-      </header>
       
       <div className="main-content">
         <div className="distribution-display">
@@ -44,6 +41,8 @@ function App() {
           />
         </div>
       </div>
+      
+      <Footer />
     </div>
   );
 }

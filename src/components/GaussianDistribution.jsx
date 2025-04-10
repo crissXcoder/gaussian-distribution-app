@@ -7,9 +7,9 @@ const GaussianDistribution = ({ distributionData, width = 800, height = 400 }) =
   
   // Colores para cada medida estadística
   const colors = {
-    mode: '#FF5733',  // rojo
-    median: '#33A1FF', // azul
-    mean: '#5AFF33'   // verde
+    mode: '#03045E',    // Azul oscuro para la moda
+    median: '#0077B6',  // Azul medio para la mediana
+    mean: '#00B4D8'     // Azul turquesa para la media
   };
 
   useEffect(() => {
@@ -72,10 +72,10 @@ const GaussianDistribution = ({ distributionData, width = 800, height = 400 }) =
       .y(d => yScale(d.y))
       .curve(d3.curveBasis);
     
-    g.append("path")
+      g.append("path")
       .datum(data)
       .attr("fill", "none")
-      .attr("stroke", "#69b3a2")
+      .attr("stroke", "#0077B6") // Color primario
       .attr("stroke-width", 2)
       .attr("d", line);
     
@@ -86,9 +86,9 @@ const GaussianDistribution = ({ distributionData, width = 800, height = 400 }) =
       .y1(d => yScale(d.y))
       .curve(d3.curveBasis);
     
-    g.append("path")
+      g.append("path")
       .datum(data)
-      .attr("fill", "#69b3a2")
+      .attr("fill", "#90E0EF") // Color ligero
       .attr("fill-opacity", 0.3)
       .attr("d", area);
     
